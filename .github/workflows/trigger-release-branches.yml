@@ -1,4 +1,4 @@
-name: Create Release Branch
+name: Trigger the creation of Release Branch for each repository
 
 env:
   VERSIONING_REPO_URL: "https://api.github.com/repos/LeoLuiten/versioning"
