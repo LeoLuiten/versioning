@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "2.0.8",
+      "nextVersion": "2.1.0",
       "lastCommit": {
-        "hash": "5991349ac902397aca053776c58814f4d400807a",
-        "repo": "repo2",
-        "commitDate": "2025-01-02T17:11:12+01:00",
-        "message": "quick FB PR"
+        "hash": "39f3a2c71ad3b93516fa157fac4c8e78a2444b95",
+        "repo": "repo1",
+        "commitDate": "2025-01-02T17:13:39+01:00",
+        "message": "--minor | fr02repo1 (#9)\n\n* finished fr02repo1\r\n\r\n* a different message\r\n\r\n* a diff msg"
       },
       "previousReleases": [
         {
