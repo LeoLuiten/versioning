@@ -93,7 +93,7 @@ jobs:
 
             # Print the variables being used
             echo "Using the following variables:"
-            echo "GITHUB_TOKEN: [REDACTED]"
+            echo "GITHUB_TOKEN: $GITHUB_TOKEN"
             echo "TARGET_BRANCH: $TARGET_BRANCH"
             echo "NEXT_VERSION: $NEXT_VERSION"
             echo "START_REF: $START_REF"
