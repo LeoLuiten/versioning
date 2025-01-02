@@ -1,4 +1,4 @@
-name: Create Release Branch
+name: Trigger the creation of Release Branch for each repository
 
 env:
   VERSIONING_REPO_URL: "https://api.github.com/repos/LeoLuiten/versioning"
@@ -28,7 +28,7 @@ jobs:
           # Fetch the current versioning.json
           CURRENT_CONTENT=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github.v3+json" \
-            "$VERSIONING_REPO_URL/contents/$VERSION_FILE?ref=$TARGET_BRANCH")
+            "$VERSIONING_REPO_URL/contents/$VERSION_FILE?ref=Lisa")
 
           echo "API Response: $CURRENT_CONTENT"
 
@@ -70,6 +70,8 @@ jobs:
 
       # Trigger release branch creation workflows
       - name: Call Release Branch Creation on Multiple Repositories
+        env:
+          GITHUB_TOKEN: ${{ secrets.supertoken }}
         run: |
           REPOS=(
             "https://api.github.com/repos/LeoLuiten/repo1"
@@ -89,11 +91,33 @@ jobs:
 
             echo "Triggering release branch creation for $REPO with start ref $START_REF"
 
+            # Print the variables being used
+            echo "Using the following variables:"
+            echo "GITHUB_TOKEN: ${#GITHUB_TOKEN} characters"
+            echo "TARGET_BRANCH: $TARGET_BRANCH"
+            echo "NEXT_VERSION: $NEXT_VERSION"
+            echo "START_REF: $START_REF"
+            echo "Repository URL: $REPO/actions/workflows/Create-release-branch.yml/dispatches"
+
+            # Construct the payload
+            PAYLOAD="{\"ref\": \"$TARGET_BRANCH\", \"inputs\": {\"next_version\": \"$NEXT_VERSION\", \"start_ref\": \"$START_REF\"}}"
+
+            # Print the payload
+            echo "Payload being sent:"
+            echo "$PAYLOAD"
+
+            # Execute the curl command and capture the response
             RESPONSE=$(curl -X POST \
-              -H "Authorization: token $GITHUB_TOKEN" \
-              -H "Accept: application/vnd.github.v3+json" \
-              "$REPO/actions/workflows/create-release-branch.yml/dispatches" \
-              -d "{\"ref\": \"$TARGET_BRANCH\", \"inputs\": {\"next_version\": \"$NEXT_VERSION\", \"start_ref\": \"$START_REF\"}}")
+                          -H "Authorization: Bearer $GITHUB_TOKEN" \
+                          -H "Accept: application/vnd.github+json" \
+                          -H "X-GitHub-Api-Version: 2022-11-28" \
+                          "$REPO/actions/workflows/Create-release-branch.yml/dispatches" \
+                          -d "$PAYLOAD")
+
+            # Print the response
+            echo "Response from GitHub API:"
+            echo "$RESPONSE"
+
 
             if [[ $? -ne 0 ]]; then
               echo "Failed to trigger workflow for $REPO"
