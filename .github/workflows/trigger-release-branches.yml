@@ -97,7 +97,7 @@ jobs:
             echo "TARGET_BRANCH: $TARGET_BRANCH"
             echo "NEXT_VERSION: $NEXT_VERSION"
             echo "START_REF: $START_REF"
-            echo "Repository URL: $REPO/actions/workflows/create-release-branch.yml/dispatches"
+            echo "Repository URL: $REPO/actions/workflows/Create-release-branch.yml/dispatches"
 
             # Construct the payload
             PAYLOAD="{\"ref\": \"$TARGET_BRANCH\", \"inputs\": {\"next_version\": \"$NEXT_VERSION\", \"start_ref\": \"$START_REF\"}}"
@@ -111,7 +111,7 @@ jobs:
                           -H "Authorization: Bearer $GITHUB_TOKEN" \
                           -H "Accept: application/vnd.github+json" \
                           -H "X-GitHub-Api-Version: 2022-11-28" \
-                          "$REPO/actions/workflows/create-release-branch.yml/dispatches" \
+                          "$REPO/actions/workflows/Create-release-branch.yml/dispatches" \
                           -d "$PAYLOAD")
 
             # Print the response
