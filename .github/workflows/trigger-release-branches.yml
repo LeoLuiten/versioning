@@ -93,7 +93,7 @@ jobs:
 
             # Print the variables being used
             echo "Using the following variables:"
-            echo "GITHUB_TOKEN: $GITHUB_TOKEN"
+            echo "GITHUB_TOKEN: ${#GITHUB_TOKEN} characters"
             echo "TARGET_BRANCH: $TARGET_BRANCH"
             echo "NEXT_VERSION: $NEXT_VERSION"
             echo "START_REF: $START_REF"
@@ -108,8 +108,9 @@ jobs:
 
             # Execute the curl command and capture the response
             RESPONSE=$(curl -X POST \
-                          -H "Authorization: token $GITHUB_TOKEN" \
-                          -H "Accept: application/vnd.github.v3+json" \
+                          -H "Authorization: Bearer $GITHUB_TOKEN" \
+                          -H "Accept: application/vnd.github+json" \
+                          -H "X-GitHub-Api-Version: 2022-11-28" \
                           "$REPO/actions/workflows/create-release-branch.yml/dispatches" \
                           -d "$PAYLOAD")
 
