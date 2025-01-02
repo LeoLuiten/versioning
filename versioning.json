@@ -1,56 +1,54 @@
 {
-    "environments": {
-      "development": {
-        "nextVersion": "2.0.0",
-        "lastCommit": {
-          "hash": "7a0169b3f42c2981c748dda5846da46ee2dde0a1",
-          "repo": "repo1",
-          "commitDate": "2025-01-01T22:59:26+01:00",
-          "message": "--major | fr01\n\nthis is a description when creating a pr, the title respected the branch name convention"
-        },
-        "previousReleases": [
-          {
-            "version": "1.1.0-dev",
-            "repo1": {
-              "lastHash": "faf3184d041245ff0e21df395a00b7a7ec550ea6",
-              "lastName": "Added development bound scripts",
-              "commitDate": "2025-01-02T08:56:38+01:00"
-            },
-            "repo2": {
-              "lastHash": "246ebd3f3f555343b53f8a111719aa737cc23b6f",
-              "lastName": "not needing that",
-              "commitDate": "2024-12-27T19:32:12+01:00"
-            },
-            "repo3": {
-              "lastHash": "533c2546fc49ea159c276cac71f475b985e71104",
-              "lastName": "fix!",
-              "commitDate": "2024-12-27T19:28:47+01:00"
-            }
-          }
-        ]
+  "environments": {
+    "development": {
+      "nextVersion": "2.0.1",
+      "lastCommit": {
+        "hash": "08e182a0f06fee234789064c12bca893e36a8c65",
+        "repo": "repo1",
+        "commitDate": "2025-01-02T09:23:16+01:00",
+        "message": "error when updating version file was due non version file was existing atm"
       },
-      "production": [
+      "previousReleases": [
         {
-          "version": "1.0.0",
+          "version": "1.1.0-dev",
           "repo1": {
-            "lastHash": "aad25f6b462abaa92f45b9cae87d88ce09f5b02f",
-            "lastName": "added base scripts",
-            "commitDate": "2025-01-02T08:48:34+01:00"
+            "lastHash": "faf3184d041245ff0e21df395a00b7a7ec550ea6",
+            "lastName": "Added development bound scripts",
+            "commitDate": "2025-01-02T08:56:38+01:00"
           },
           "repo2": {
-            "lastHash": "f456133ba017e835ddf9c2d65c2426d971d40364",
-            "lastName": "first change on main branch",
-            "commitDate": ""
+            "lastHash": "246ebd3f3f555343b53f8a111719aa737cc23b6f",
+            "lastName": "not needing that",
+            "commitDate": "2024-12-27T19:32:12+01:00"
           },
           "repo3": {
-            "lastHash": "4733dadcd746667cb8a93470d0b7a36dd3d0d65c",
-            "lastName": "1st commit on repo 3 main branch",
-            "commitDate": ""
-          },
-          "releaseDate": "2024-12-09T12:00:00Z"
+            "lastHash": "533c2546fc49ea159c276cac71f475b985e71104",
+            "lastName": "fix!",
+            "commitDate": "2024-12-27T19:28:47+01:00"
+          }
         }
       ]
-    }
+    },
+    "production": [
+      {
+        "version": "1.0.0",
+        "repo1": {
+          "lastHash": "aad25f6b462abaa92f45b9cae87d88ce09f5b02f",
+          "lastName": "added base scripts",
+          "commitDate": "2025-01-02T08:48:34+01:00"
+        },
+        "repo2": {
+          "lastHash": "f456133ba017e835ddf9c2d65c2426d971d40364",
+          "lastName": "first change on main branch",
+          "commitDate": ""
+        },
+        "repo3": {
+          "lastHash": "4733dadcd746667cb8a93470d0b7a36dd3d0d65c",
+          "lastName": "1st commit on repo 3 main branch",
+          "commitDate": ""
+        },
+        "releaseDate": "2024-12-09T12:00:00Z"
+      }
+    ]
   }
-  
-  
+}
