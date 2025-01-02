@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "2.0.3",
+      "nextVersion": "2.0.4",
       "lastCommit": {
-        "hash": "51f071b1f1d85842e68c1d3961005a011e20e41c",
+        "hash": "3c264b23fbd317666da35a0793b56b6ded78b131",
         "repo": "repo1",
-        "commitDate": "2025-01-02T16:47:41+01:00",
-        "message": "Updated pr enforcer"
+        "commitDate": "2025-01-02T16:53:23+01:00",
+        "message": "updated enforcer to change the PR title at the beggining"
       },
       "previousReleases": [
         {
