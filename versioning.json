@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "2.0.1",
+      "nextVersion": "2.0.2",
       "lastCommit": {
-        "hash": "08e182a0f06fee234789064c12bca893e36a8c65",
+        "hash": "999534ef72cdf25e47f1223729a1175438a92114",
         "repo": "repo1",
-        "commitDate": "2025-01-02T09:23:16+01:00",
-        "message": "error when updating version file was due non version file was existing atm"
+        "commitDate": "2025-01-02T16:33:28+01:00",
+        "message": "fr02 finished"
       },
       "previousReleases": [
         {
