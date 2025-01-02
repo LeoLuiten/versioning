@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "2.0.2",
+      "nextVersion": "2.0.3",
       "lastCommit": {
-        "hash": "999534ef72cdf25e47f1223729a1175438a92114",
+        "hash": "51f071b1f1d85842e68c1d3961005a011e20e41c",
         "repo": "repo1",
-        "commitDate": "2025-01-02T16:33:28+01:00",
-        "message": "fr02 finished"
+        "commitDate": "2025-01-02T16:47:41+01:00",
+        "message": "Updated pr enforcer"
       },
       "previousReleases": [
         {
