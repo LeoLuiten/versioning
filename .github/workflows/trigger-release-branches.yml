@@ -70,6 +70,8 @@ jobs:
 
       # Trigger release branch creation workflows
       - name: Call Release Branch Creation on Multiple Repositories
+        env:
+          GITHUB_TOKEN: ${{ secrets.supertoken }}
         run: |
           REPOS=(
             "https://api.github.com/repos/LeoLuiten/repo1"
