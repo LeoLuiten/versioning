@@ -12,8 +12,8 @@
         {
           "version": "1.1.0-dev",
           "repo1": {
-            "lastHash": "faf3184d041245ff0e21df395a00b7a7ec550ea6",
-            "lastName": "Added development bound scripts",
+            "lastHash": "e6fccf265f023a556c7bff813e3ee3ec3678a393",
+            "lastName": "added base scripts on repo1",
             "commitDate": "2025-01-02T08:56:38+01:00"
           },
           "repo2": {
