@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "2.0.7",
+      "nextVersion": "2.0.8",
       "lastCommit": {
-        "hash": "0f04c52a3df205c37673e635283d0814cc177111",
-        "repo": "repo1",
-        "commitDate": "2025-01-02T17:09:05+01:00",
-        "message": "restored to default (last commit msg must not contain the branch name)"
+        "hash": "5991349ac902397aca053776c58814f4d400807a",
+        "repo": "repo2",
+        "commitDate": "2025-01-02T17:11:12+01:00",
+        "message": "quick FB PR"
       },
       "previousReleases": [
         {
