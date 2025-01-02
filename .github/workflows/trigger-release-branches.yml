@@ -28,7 +28,7 @@ jobs:
           # Fetch the current versioning.json
           CURRENT_CONTENT=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github.v3+json" \
-            "$VERSIONING_REPO_URL/contents/$VERSION_FILE?ref=$TARGET_BRANCH")
+            "$VERSIONING_REPO_URL/contents/$VERSION_FILE?ref=Lisa")
 
           echo "API Response: $CURRENT_CONTENT"
 
