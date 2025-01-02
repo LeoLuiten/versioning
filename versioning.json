@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "2.0.4",
+      "nextVersion": "2.0.5",
       "lastCommit": {
-        "hash": "3c264b23fbd317666da35a0793b56b6ded78b131",
+        "hash": "ae9bfa48d525679dfb318c43b8a02c61d522e04b",
         "repo": "repo1",
-        "commitDate": "2025-01-02T16:53:23+01:00",
-        "message": "updated enforcer to change the PR title at the beggining"
+        "commitDate": "2025-01-02T17:01:12+01:00",
+        "message": "enforcer v2, checks for the presence of the branch name on the title, then checks for the flag"
       },
       "previousReleases": [
         {
