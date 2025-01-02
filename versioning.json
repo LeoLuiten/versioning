@@ -17,14 +17,14 @@
             "commitDate": "2025-01-02T08:56:38+01:00"
           },
           "repo2": {
-            "lastHash": "246ebd3f3f555343b53f8a111719aa737cc23b6f",
-            "lastName": "not needing that",
-            "commitDate": "2024-12-27T19:32:12+01:00"
+            "lastHash": "500fd590b44cd7b1c9c8df648de76dd298ec4e67",
+            "lastName": "Added development bound scripts",
+            "commitDate": "2025-01-02T08:21:17+01:00"
           },
           "repo3": {
-            "lastHash": "533c2546fc49ea159c276cac71f475b985e71104",
-            "lastName": "fix!",
-            "commitDate": "2024-12-27T19:28:47+01:00"
+            "lastHash": "d2cdfdb72f3fac62edd014b242ce40c49b556a98",
+            "lastName": "Added development bound scripts",
+            "commitDate": "2025-01-02T08:30:19+01:00"
           }
         }
       ]
@@ -38,14 +38,14 @@
           "commitDate": "2025-01-02T08:48:34+01:00"
         },
         "repo2": {
-          "lastHash": "f456133ba017e835ddf9c2d65c2426d971d40364",
-          "lastName": "first change on main branch",
-          "commitDate": ""
+          "lastHash": "0a3ab32620fe056bd57ff7bcdf6cabbf2319a7f6",
+          "lastName": "Added base scripts",
+          "commitDate": "2025-01-02T08:19:19+01:00"
         },
         "repo3": {
-          "lastHash": "4733dadcd746667cb8a93470d0b7a36dd3d0d65c",
-          "lastName": "1st commit on repo 3 main branch",
-          "commitDate": ""
+          "lastHash": "9822f4dfca97a812fbf86e04f007671d3358b58f",
+          "lastName": "Added base scripts",
+          "commitDate": "2025-01-02T08:28:17+01:00"
         },
         "releaseDate": "2024-12-09T12:00:00Z"
       }
