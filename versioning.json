@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "2.2.1",
+      "nextVersion": "2.2.2",
       "lastCommit": {
-        "hash": "adac72167bfb19f6e4a4f27b5f14b09ee4baa548",
+        "hash": "43bcbbbe412cd52763dc1ab4ea6dbed94fad9dff",
         "repo": "repo1",
-        "commitDate": "2025-01-04T13:00:10+01:00",
-        "message": "Added scripts on the main branch"
+        "commitDate": "2025-01-04T13:08:12+01:00",
+        "message": "trying enforcer 2 so when a pr is created values are as expected"
       },
       "previousReleases": [
         {
