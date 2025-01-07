@@ -12,13 +12,13 @@
         {
           "version": "1.1.0-dev",
           "repo1": {
-            "lastHash": "fd09a200a639c59ed249803619cc18821406891b",
-            "lastName": "Added scripts",
+            "lastHash": "69ad489de85c1af9c098651c9e2ca5e6edd85db2",
+            "lastName": "added scripts",
             "commitDate": "2025-01-02T08:56:38+01:00"
           },
           "repo2": {
-            "lastHash": "500fd590b44cd7b1c9c8df648de76dd298ec4e67",
-            "lastName": "Added development bound scripts",
+            "lastHash": "7b4d996868775e20740ae65ef54c991cd912a5e8",
+            "lastName": "added scripts",
             "commitDate": "2025-01-02T08:21:17+01:00"
           },
           "repo3": {
