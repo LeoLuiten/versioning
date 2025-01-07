@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.1.23",
+      "nextVersion": "3.1.24",
       "lastCommit": {
-        "hash": "4b10a240e1d9d0bdb63a1be19360c8873e550f72",
+        "hash": "0bb4219a23015e23dcf05cececa5d6972ac87293",
         "repo": "repo1",
-        "commitDate": "2025-01-07T13:25:55+01:00",
-        "message": "updated date format"
+        "commitDate": "2025-01-07T13:30:32+01:00",
+        "message": "Merge branch 'development' of github.com:LeoLuiten/repo1 into development"
       },
       "previousReleases": [
         {
