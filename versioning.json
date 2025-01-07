@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.1.10",
+      "nextVersion": "3.1.11",
       "lastCommit": {
-        "hash": "667c82d27bd41df574cfa1744e1a04eac4ab0e01",
+        "hash": "7e762a565e7e615c538336089ab9700bd0cc069f",
         "repo": "repo1",
-        "commitDate": "2025-01-07T11:56:31+01:00",
-        "message": "modified branch settings fetching credentials"
+        "commitDate": "2025-01-07T12:01:15+01:00",
+        "message": "updated curl method"
       },
       "previousReleases": [
         {
