@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.1.14",
+      "nextVersion": "3.1.15",
       "lastCommit": {
-        "hash": "f4727fe6b577bf1b0c657ecbec7ccf4c3e456edf",
+        "hash": "848a7978ef9141906a4ac7d049ff07bbe520ad83",
         "repo": "repo1",
-        "commitDate": "2025-01-07T12:06:38+01:00",
-        "message": "corrected the pushing of new settings (unlocking development branch)"
+        "commitDate": "2025-01-07T12:09:05+01:00",
+        "message": "updated git credentials for merging into dev"
       },
       "previousReleases": [
         {
