@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.1.21",
+      "nextVersion": "3.1.22",
       "lastCommit": {
-        "hash": "49f3c1dd9a6135c51cda6c8a0731806833944e4d",
+        "hash": "3edaf8126887266d448c24d9176dae5dd4ae5bfb",
         "repo": "repo1",
-        "commitDate": "2025-01-07T13:16:27+01:00",
-        "message": "Added script for Creating a tag"
+        "commitDate": "2025-01-07T13:19:09+01:00",
+        "message": "fixed typo"
       },
       "previousReleases": [
         {
