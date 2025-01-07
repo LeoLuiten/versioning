@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.0.4",
+      "nextVersion": "3.0.5",
       "lastCommit": {
-        "hash": "2a9129fa00a1c3e7f7b3efa9c8612974b558a258",
+        "hash": "8107306c975fafff9f435c0cce72ea254d036c2e",
         "repo": "repo1",
-        "commitDate": "2025-01-07T10:16:29+01:00",
-        "message": "replaced name to find the error code 1"
+        "commitDate": "2025-01-07T10:19:07+01:00",
+        "message": "added debug statement"
       },
       "previousReleases": [
         {
