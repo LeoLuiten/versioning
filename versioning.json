@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.0.3",
+      "nextVersion": "3.0.4",
       "lastCommit": {
-        "hash": "e54610b395fbf2e15e1aa599c8538afe258a4bc2",
+        "hash": "2a9129fa00a1c3e7f7b3efa9c8612974b558a258",
         "repo": "repo1",
-        "commitDate": "2025-01-07T10:08:36+01:00",
-        "message": "Renamed placeholder empty commit. Change execution order"
+        "commitDate": "2025-01-07T10:16:29+01:00",
+        "message": "replaced name to find the error code 1"
       },
       "previousReleases": [
         {
