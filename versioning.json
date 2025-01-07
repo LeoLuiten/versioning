@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.1.9",
+      "nextVersion": "3.1.10",
       "lastCommit": {
-        "hash": "34a6ed7e3bedab4197f3ab79bcbf98ed7ab302a8",
+        "hash": "667c82d27bd41df574cfa1744e1a04eac4ab0e01",
         "repo": "repo1",
-        "commitDate": "2025-01-07T11:52:46+01:00",
-        "message": "damn url string wrong"
+        "commitDate": "2025-01-07T11:56:31+01:00",
+        "message": "modified branch settings fetching credentials"
       },
       "previousReleases": [
         {
