@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.1.27",
+      "nextVersion": "3.1.28",
       "lastCommit": {
-        "hash": "f04277dbafc241deda485549a7b7a19db5c1eab7",
+        "hash": "fd09a200a639c59ed249803619cc18821406891b",
         "repo": "repo1",
-        "commitDate": "2025-01-07T14:15:23+01:00",
-        "message": "added scripts for testing orphan dev branch"
+        "commitDate": "2025-01-07T14:25:34+01:00",
+        "message": "Added scripts"
       },
       "previousReleases": [
         {
