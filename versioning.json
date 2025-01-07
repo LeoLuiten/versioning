@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.1.15",
+      "nextVersion": "3.1.16",
       "lastCommit": {
-        "hash": "848a7978ef9141906a4ac7d049ff07bbe520ad83",
+        "hash": "4f607b0679fe414b971d57d9e6b7afc0e9fd4a63",
         "repo": "repo1",
-        "commitDate": "2025-01-07T12:09:05+01:00",
-        "message": "updated git credentials for merging into dev"
+        "commitDate": "2025-01-07T12:12:29+01:00",
+        "message": "updated credentials"
       },
       "previousReleases": [
         {
