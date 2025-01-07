@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.1.3",
+      "nextVersion": "3.1.4",
       "lastCommit": {
-        "hash": "c0de74248aaf2a42bdf153f7c6f62b21c3a63f29",
+        "hash": "796b5976ee283f5237b1a293c523b7bc825cf12f",
         "repo": "repo1",
-        "commitDate": "2025-01-07T11:28:18+01:00",
-        "message": "merge commits contemplated"
+        "commitDate": "2025-01-07T11:33:49+01:00",
+        "message": "updated credentials"
       },
       "previousReleases": [
         {
