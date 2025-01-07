@@ -1,0 +1,109 @@
+name: Trigger the creation of tags for the development branch on each repository
+
+env:
+  VERSIONING_REPO_URL: "https://api.github.com/repos/LeoLuiten/versioning"
+  VERSION_FILE: "versioning.json"
+  GITHUB_TOKEN: ${{ secrets.supertoken }}
+  TARGET_BRANCH: "development"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  create-release-branch:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Install necessary tools
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      # Fetch and parse JSON
+      - name: Fetch and Parse Versioning JSON
+        run: |
+          # Fetch the current versioning.json
+          CURRENT_CONTENT=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "$VERSIONING_REPO_URL/contents/$VERSION_FILE?ref=Lisa")
+
+          echo "API Response: $CURRENT_CONTENT"
+
+          # Validate the API response
+          if [[ $? -ne 0 || -z "$CURRENT_CONTENT" ]]; then
+              echo "Failed to fetch the versioning.json. Exiting."
+              exit 1
+          fi
+
+          ENCODED_CONTENT=$(echo "$CURRENT_CONTENT" | jq -r '.content')
+          if [[ -z "$ENCODED_CONTENT" || "$ENCODED_CONTENT" == "null" ]]; then
+              echo "Failed to extract content. Exiting."
+              exit 1
+          fi
+
+          # Decode and parse JSON
+          CURRENT_JSON=$(echo "$ENCODED_CONTENT" | base64 --decode)
+          echo "Decoded JSON: $CURRENT_JSON"
+
+          NEXT_VERSION=$(echo "$CURRENT_JSON" | jq -r '.environments.development.nextVersion')
+          if [[ -z "$NEXT_VERSION" || "$NEXT_VERSION" == "null" ]]; then
+              echo "Failed to extract next version. Exiting."
+              exit 1
+          fi
+
+          echo "NEXT_VERSION=$NEXT_VERSION" >> $GITHUB_ENV
+
+      # Trigger release branch creation workflows
+      - name: Call Release Branch Creation on Multiple Repositories
+        env:
+          GITHUB_TOKEN: ${{ secrets.supertoken }}
+        run: |
+          REPOS=(
+            "https://api.github.com/repos/LeoLuiten/repo1"
+            "https://api.github.com/repos/LeoLuiten/repo2"
+            "https://api.github.com/repos/LeoLuiten/repo3"
+          )
+
+          for i in "${!REPOS[@]}"; do
+            REPO="${REPOS[$i]}"
+
+            echo "Triggering tag creation workflow for $REPO passing $NEXT_VERSION" 
+
+            # Print the variables being used
+            echo "Using the following variables:"
+            echo "GITHUB_TOKEN: ${#GITHUB_TOKEN} characters"
+            echo "TARGET_BRANCH: $TARGET_BRANCH"
+            echo "NEXT_VERSION: $NEXT_VERSION"
+            echo "Repository URL: $REPO/actions/workflows/Create-development-tag.yml/dispatches"
+
+            # Construct the payload
+            PAYLOAD="{\"ref\": \"$TARGET_BRANCH\", \"inputs\": {\"release_branch\": \"Release-v-$NEXT_VERSION\"}}"
+
+            # Print the payload
+            echo "Payload being sent:"
+            echo "$PAYLOAD"
+
+            # Execute the curl command and capture the response
+            RESPONSE=$(curl -X POST \
+                          -H "Authorization: Bearer $GITHUB_TOKEN" \
+                          -H "Accept: application/vnd.github+json" \
+                          -H "X-GitHub-Api-Version: 2022-11-28" \
+                          "$REPO/actions/workflows/Create-development-tag.yml/dispatches" \
+                          -d "$PAYLOAD")
+
+            # Print the response
+            echo "Response from GitHub API:"
+            echo "$RESPONSE"
+
+
+            if [[ $? -ne 0 ]]; then
+              echo "Failed to trigger workflow for $REPO"
+              exit 1
+            fi
+
+            echo "Response for $REPO: $RESPONSE"
+          done
+
