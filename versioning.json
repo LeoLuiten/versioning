@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.0.0",
+      "nextVersion": "3.0.1",
       "lastCommit": {
-        "hash": "a39f1d14ca9fd8b2293a2294e88605988b10123a",
+        "hash": "6adc4c18c1ca4a72620ad9205971fc78810702a8",
         "repo": "repo1",
-        "commitDate": "2025-01-04T13:53:11+01:00",
-        "message": "--major | fr05repo1\n\nPRN on ticket 5 here"
+        "commitDate": "2025-01-07T09:26:31+01:00",
+        "message": "--patch added control for cherry picking merge commits (selecting 1st parent)"
       },
       "previousReleases": [
         {
