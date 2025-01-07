@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.1.5",
+      "nextVersion": "3.1.6",
       "lastCommit": {
-        "hash": "e96c292a8ba17088ad8fc3b0e33dd1a12075edb8",
+        "hash": "c4be6cb680c6abd33666d885106c57187011393c",
         "repo": "repo1",
-        "commitDate": "2025-01-07T11:34:13+01:00",
-        "message": "re updated credentials"
+        "commitDate": "2025-01-07T11:39:36+01:00",
+        "message": "git diff control added"
       },
       "previousReleases": [
         {
