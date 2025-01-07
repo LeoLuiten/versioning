@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.1.19",
+      "nextVersion": "3.1.20",
       "lastCommit": {
-        "hash": "8f03fb1435948f0c06d5d39ad7ad01a996b81e1a",
+        "hash": "4f772f63363e262d7a63e3e0e724349fa0d05595",
         "repo": "repo1",
-        "commitDate": "2025-01-07T12:40:52+01:00",
-        "message": "again2"
+        "commitDate": "2025-01-07T12:47:27+01:00",
+        "message": "elevated bot permission"
       },
       "previousReleases": [
         {
