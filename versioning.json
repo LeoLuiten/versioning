@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.1.17",
+      "nextVersion": "3.1.18",
       "lastCommit": {
-        "hash": "897b5e30517c9ef90795e0fadfcf35ba76e3381f",
+        "hash": "f079e466a537d8ec78363af8abeb4b314c092768",
         "repo": "repo1",
-        "commitDate": "2025-01-07T12:36:58+01:00",
-        "message": "updated auth with ssh"
+        "commitDate": "2025-01-07T12:37:51+01:00",
+        "message": "again"
       },
       "previousReleases": [
         {
