@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.1.30",
+      "nextVersion": "3.1.31",
       "lastCommit": {
-        "hash": "a7530e9ce6cf89f96fb5fe6aba411f31316ff86b",
+        "hash": "5e868c5360992de25101c8b04f1efcd97d6c746a",
         "repo": "repo1",
-        "commitDate": "2025-01-07T14:38:56+01:00",
-        "message": "updated re;lease branch name"
+        "commitDate": "2025-01-07T14:44:28+01:00",
+        "message": "removed extra dev"
       },
       "previousReleases": [
         {
