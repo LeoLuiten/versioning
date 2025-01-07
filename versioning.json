@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.1.2",
+      "nextVersion": "3.1.3",
       "lastCommit": {
-        "hash": "89cd6d8a2f36ea05a1fb3d3e51c8fa181976d6c8",
+        "hash": "c0de74248aaf2a42bdf153f7c6f62b21c3a63f29",
         "repo": "repo1",
-        "commitDate": "2025-01-07T11:25:19+01:00",
-        "message": "updated script dependency among jobs"
+        "commitDate": "2025-01-07T11:28:18+01:00",
+        "message": "merge commits contemplated"
       },
       "previousReleases": [
         {
