@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.1.4",
+      "nextVersion": "3.1.5",
       "lastCommit": {
-        "hash": "796b5976ee283f5237b1a293c523b7bc825cf12f",
+        "hash": "e96c292a8ba17088ad8fc3b0e33dd1a12075edb8",
         "repo": "repo1",
-        "commitDate": "2025-01-07T11:33:49+01:00",
-        "message": "updated credentials"
+        "commitDate": "2025-01-07T11:34:13+01:00",
+        "message": "re updated credentials"
       },
       "previousReleases": [
         {
