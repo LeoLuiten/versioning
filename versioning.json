@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.0.8",
+      "nextVersion": "3.0.9",
       "lastCommit": {
-        "hash": "8bc066ed4947f61e70331b72dab45e97c12a706c",
+        "hash": "56a87f65e0ebbc0a7cb38d88a78b931b9d72175b",
         "repo": "repo1",
-        "commitDate": "2025-01-07T10:34:20+01:00",
-        "message": "restored og script"
+        "commitDate": "2025-01-07T10:38:23+01:00",
+        "message": "removed git bot credentials"
       },
       "previousReleases": [
         {
