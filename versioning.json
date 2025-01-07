@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.0.2",
+      "nextVersion": "3.0.3",
       "lastCommit": {
-        "hash": "ee4b9b84bb6760e6d41f5f1ad8406a333db52ad7",
+        "hash": "e54610b395fbf2e15e1aa599c8538afe258a4bc2",
         "repo": "repo1",
-        "commitDate": "2025-01-07T09:30:52+01:00",
-        "message": "skip empty cherry picks"
+        "commitDate": "2025-01-07T10:08:36+01:00",
+        "message": "Renamed placeholder empty commit. Change execution order"
       },
       "previousReleases": [
         {
