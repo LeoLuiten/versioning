@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.3.4",
+      "nextVersion": "3.3.5",
       "lastCommit": {
-        "hash": "76ff833e2b8075ee6bc68ab95d7f8bda73c5dccc",
-        "repo": "repo2",
-        "commitDate": "2025-01-08T14:25:27Z",
-        "message": "2.0.0-dev"
+        "hash": "b0d6158b9ada5a05bbbb8db8b5e054b9c2d54680",
+        "repo": "repo3",
+        "commitDate": "2025-01-08T15:54:03+01:00",
+        "message": "--patch | Release-v-2.0.0-dev\n\ndescription for the client"
       },
       "previousReleases": [
         {
