@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.3.2",
+      "nextVersion": "3.3.3",
       "lastCommit": {
-        "hash": "4653df236c387f0f25c6156442738857cefdbd32",
-        "repo": "repo1",
-        "commitDate": "2025-01-08T14:50:42+01:00",
-        "message": "now patch sould increase"
+        "hash": "e9607a2ccad8b569fe6b5ef99e41758d6c289640",
+        "repo": "repo3",
+        "commitDate": "2025-01-08T15:22:11+01:00",
+        "message": "--patch | fr01\n\ndescription for the client"
       },
       "previousReleases": [
         {
