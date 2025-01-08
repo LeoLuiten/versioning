@@ -3,10 +3,10 @@
     "development": {
       "nextVersion": "3.3.1",
       "lastCommit": {
-        "hash": "55807390b8ba6c1e6f0d5d29b127f52fbd1008bf",
-        "repo": "repo2",
-        "commitDate": "2025-01-07T15:55:49Z",
-        "message": "3.3.0"
+        "hash": "ce03aea963e30839418f79c80a4106d9b3e10544",
+        "repo": "repo1",
+        "commitDate": "2025-01-08T14:49:28+01:00",
+        "message": "v. patch number wont increase when commit message starts with v."
       },
       "previousReleases": [
         {
