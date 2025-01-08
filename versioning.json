@@ -1,12 +1,12 @@
 {
   "environments": {
     "development": {
-      "nextVersion": "3.3.1",
+      "nextVersion": "3.3.2",
       "lastCommit": {
-        "hash": "ce03aea963e30839418f79c80a4106d9b3e10544",
+        "hash": "4653df236c387f0f25c6156442738857cefdbd32",
         "repo": "repo1",
-        "commitDate": "2025-01-08T14:49:28+01:00",
-        "message": "v. patch number wont increase when commit message starts with v."
+        "commitDate": "2025-01-08T14:50:42+01:00",
+        "message": "now patch sould increase"
       },
       "previousReleases": [
         {
